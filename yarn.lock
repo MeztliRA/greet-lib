@@ -256,22 +256,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-node-resolve@npm:^11.2.1":
-  version: 11.2.1
-  resolution: "@rollup/plugin-node-resolve@npm:11.2.1"
-  dependencies:
-    "@rollup/pluginutils": ^3.1.0
-    "@types/resolve": 1.17.1
-    builtin-modules: ^3.1.0
-    deepmerge: ^4.2.2
-    is-module: ^1.0.0
-    resolve: ^1.19.0
-  peerDependencies:
-    rollup: ^1.20.0||^2.0.0
-  checksum: ae1bed46a949a1d8c077e021751c0140a523f731bea464ed0bfc3d335096493d1638be2a756f72d96f1f3a00fbdad8ba8fad8e86381d3eafce5ea2dffd62f175
-  languageName: node
-  linkType: hard
-
 "@rollup/plugin-replace@npm:^2.4.2":
   version: 2.4.2
   resolution: "@rollup/plugin-replace@npm:2.4.2"
@@ -332,12 +316,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/resolve@npm:1.17.1":
-  version: 1.17.1
-  resolution: "@types/resolve@npm:1.17.1"
+"@types/resolve@npm:0.0.8":
+  version: 0.0.8
+  resolution: "@types/resolve@npm:0.0.8"
   dependencies:
     "@types/node": "*"
-  checksum: 8e72a73574f9489760662498c1ad512a8d4084a5db15f327e0d785cb277bb0a3146cd049241a8e3268bd0ed204ad3ee7b4a6b4622ef681e70547be9af258ca6a
+  checksum: f54f13e4b6ac46a6c7bde9e609cd730f4369b434aa59c5230478b9262bb75e7349c3247fd2cdb917e98d053a57f5609dd552379c612a720b59a8714914d324ed
   languageName: node
   linkType: hard
 
@@ -2111,13 +2095,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "deepmerge@npm:4.2.2"
-  checksum: 85abf8e0045ee280996e7d2396979c877ef0741e413b716e42441110e0a83ac08098b2a49cea035510060bf667c0eae3189b2a52349f5fa4b000c211041637b1
-  languageName: node
-  linkType: hard
-
 "delegates@npm:^1.0.0":
   version: 1.0.0
   resolution: "delegates@npm:1.0.0"
@@ -2287,6 +2264,13 @@ __metadata:
   version: 0.5.2
   resolution: "estree-walker@npm:0.5.2"
   checksum: 7571b53ac761ddd4d86a55920446a3038e298b79fe5b78ad05368af27ec3dd1057863bec4512c4bca86c6e09a0f2d80e1b1b965dd4d1efd7ed3cf138ec3470a0
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "estree-walker@npm:0.6.1"
+  checksum: a63b94b841fcda2d79ff8e313b4ea8439b3364094ba66547289814bd7da4399a54cd33849b23504d239266430f219a142627071201a9fb6eb488bd025575f8fc
   languageName: node
   linkType: hard
 
@@ -2785,7 +2769,6 @@ __metadata:
     "@commitlint/config-conventional": 7.1.2
     "@rollup/plugin-commonjs": ^18.0.0
     "@rollup/plugin-json": ^4.1.0
-    "@rollup/plugin-node-resolve": ^11.2.1
     "@rollup/plugin-replace": ^2.4.2
     "@types/node": ^15.0.1
     "@types/webpack-config-utils": 2.3.0
@@ -2794,6 +2777,7 @@ __metadata:
     cross-var: 1.1.0
     gzip-size: 5.0.0
     rollup: 0.68.2
+    rollup-plugin-node-resolve: ^5.2.0
     rollup-plugin-sourcemaps: 0.4.2
     rollup-plugin-terser: 3.0.0
     rollup-plugin-uglify: 6.0.0
@@ -4862,7 +4846,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@^1.17.0, resolve@^1.19.0":
+"resolve@^1.11.1, resolve@^1.17.0":
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
   dependencies:
@@ -4881,7 +4865,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.11.1#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>":
   version: 1.20.0
   resolution: "resolve@patch:resolve@npm%3A1.20.0#builtin<compat/resolve>::version=1.20.0&hash=3388aa"
   dependencies:
@@ -4937,6 +4921,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup-plugin-node-resolve@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "rollup-plugin-node-resolve@npm:5.2.0"
+  dependencies:
+    "@types/resolve": 0.0.8
+    builtin-modules: ^3.1.0
+    is-module: ^1.0.0
+    resolve: ^1.11.1
+    rollup-pluginutils: ^2.8.1
+  peerDependencies:
+    rollup: ">=1.11.0"
+  checksum: f20dd3e6669b2b888cd41c8e6072f09c95e14559fb7a4634b5756f7f99e0986e9dc36d3b3e651c0a38ca4c192b2b96c3898aec46a81842fd2f186f55701d9cf1
+  languageName: node
+  linkType: hard
+
 "rollup-plugin-sourcemaps@npm:0.4.2":
   version: 0.4.2
   resolution: "rollup-plugin-sourcemaps@npm:0.4.2"
@@ -4984,6 +4983,15 @@ __metadata:
     estree-walker: ^0.5.2
     micromatch: ^2.3.11
   checksum: 68183e9a687d6cb66fa83ebe51e3ed98ba5df9152d1c39b54afd3f0e85c762d39e815bda339709396a841d6121c1f239d4b323c982996bc59e6d66480d59172a
+  languageName: node
+  linkType: hard
+
+"rollup-pluginutils@npm:^2.8.1":
+  version: 2.8.2
+  resolution: "rollup-pluginutils@npm:2.8.2"
+  dependencies:
+    estree-walker: ^0.6.1
+  checksum: 6922c1a26df033cc3da4650106244fb2211b5ddf72a93be5010cbe51a0817c9abcab08f61cbc3f5fc906b2701df123d8c9b0dae0a34e69dd07218e34e5d357b8
   languageName: node
   linkType: hard
 
