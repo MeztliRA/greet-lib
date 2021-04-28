@@ -25,7 +25,7 @@
   "scripts": {
     "cleanup": "shx rm -rf dist",
     "prebuild": "npm run cleanup && npm run verify",
-    "build": "tsc && tsc --target es2018 --outDir dist/esm2015 && rollup -c config/rollup.config.js && rollup -c config/rollup.config.js --environment NODE_ENV:production",
+    "build": "rm -r dist/ && tsc && tsc --target es2018 --outDir dist/esm2015 && rollup -c config/rollup.config.js && rollup -c config/rollup.config.js --environment NODE_ENV:production",
     "postbuild": "node scripts/copy",
     "docs": "rm -rf docs && typedoc --plugin typedoc-plugin-markdown --out docs src",
     "validate-js": "tsc -p ./config && tsc -p ./scripts",
