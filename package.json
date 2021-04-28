@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "library for greeting",
   "keywords": [
-    "js",
-    "core"
+    "greet",
+    "greeter"
   ],
   "main": "./bundles/index.umd.js",
   "module": "./esm5/index.js",
