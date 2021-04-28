@@ -1,0 +1,79 @@
+{
+  "name": "greet-lib",
+  "version": "0.1.0",
+  "description": "library for greeting",
+  "keywords": [
+    "js",
+    "core"
+  ],
+  "main": "./bundles/index.umd.js",
+  "module": "./esm5/index.js",
+  "es2015": "./esm2015/index.js",
+  "typings": "./types/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "",
+  "engines": {
+    "node": ">=8.5",
+    "npm": ">=6.0",
+    "yarn": "^1.0"
+  },
+  "scripts": {
+    "cleanup": "shx rm -rf dist",
+    "prebuild": "npm run cleanup && npm run verify",
+    "build": "tsc && tsc --target es2018 --outDir dist/esm2015 && rollup -c config/rollup.config.js && rollup -c config/rollup.config.js --environment NODE_ENV:production",
+    "postbuild": "node scripts/copy",
+    "docs": "rm -rf docs && typedoc --plugin typedoc-plugin-markdown --out docs src",
+    "validate-js": "tsc -p ./config && tsc -p ./scripts",
+    "commit": "git-cz",
+    "prerelease": "yarn build",
+    "release": "standard-version",
+    "postrelease": "node scripts/copy && node scripts/build && yarn release:github && yarn release:npm",
+    "release:github": "git push --no-verify --follow-tags origin master",
+    "release:npm": "npm publish dist",
+    "release:preflight": "npm pack ./dist --dry-run",
+    "size": "node scripts/file-size ./dist/bundles/index.umd.min.js ./dist/bundles/index.esm.min.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "peerDependencies": {
+    "tslib": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "7.2.1",
+    "@commitlint/config-conventional": "7.1.2",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-replace": "^2.4.2",
+    "@types/node": "8.10.*",
+    "@types/webpack-config-utils": "2.3.0",
+    "brotli-size": "0.0.3",
+    "commitizen": "3.0.5",
+    "cross-var": "1.1.0",
+    "gzip-size": "5.0.0",
+    "rollup": "0.68.2",
+    "rollup-plugin-sourcemaps": "0.4.2",
+    "rollup-plugin-terser": "3.0.0",
+    "rollup-plugin-uglify": "6.0.0",
+    "standard-version": "4.4.0",
+    "tslib": "1.9.3",
+    "tslint": "5.12.0",
+    "tslint-config-prettier": "1.17.0",
+    "tslint-config-standard": "8.0.1",
+    "tslint-etc": "1.2.12",
+    "tslint-react": "3.6.0",
+    "typedoc": "^0.19.2",
+    "typedoc-plugin-markdown": "^3.0.0",
+    "typescript": "^3.7.0",
+    "typescript-tslint-plugin": "0.2.1",
+    "webpack-config-utils": "2.3.1"
+  }
+}
