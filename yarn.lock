@@ -325,10 +325,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:8.10.*":
-  version: 8.10.39
-  resolution: "@types/node@npm:8.10.39"
-  checksum: 43eea34aa85cf47f01d4bf7a5c3ab4e9d524e551fec557c704ed3812f6adb5cc27af992380e950f58362e27ed157f80165cebce274f9a1e5629e5a3417bf2bea
+"@types/node@npm:^15.0.1":
+  version: 15.0.1
+  resolution: "@types/node@npm:15.0.1"
+  checksum: 4e4fb69394efb224272ad7c6b6dc16a381b97e46a8f3c21d33fec51ef13a4d635f571b446d127eae333ea6a763f304b787f4b3f73e24e1f3b05a21b481900dfb
   languageName: node
   linkType: hard
 
@@ -2787,7 +2787,7 @@ __metadata:
     "@rollup/plugin-json": ^4.1.0
     "@rollup/plugin-node-resolve": ^11.2.1
     "@rollup/plugin-replace": ^2.4.2
-    "@types/node": 8.10.*
+    "@types/node": ^15.0.1
     "@types/webpack-config-utils": 2.3.0
     brotli-size: 0.0.3
     commitizen: 3.0.5
