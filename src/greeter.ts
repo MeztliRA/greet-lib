@@ -7,3 +7,9 @@ export const greet = (message: string, times: number) => {
     console.log(message);
   }
 };
+
+export const greets = (...messages: string[]) => {
+  messages.forEach((message) => {
+    console.log(message);
+  });
+};

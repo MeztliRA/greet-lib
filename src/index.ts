@@ -1,1 +1,1 @@
-export { greet, greetOnce } from "./greeter";
+export { greet, greetOnce, greets } from "./greeter";
