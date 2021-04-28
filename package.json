@@ -15,8 +15,8 @@
     "type": "git",
     "url": ""
   },
-  "author": "",
-  "license": "",
+  "author": "MeztliRA",
+  "license": "MIT",
   "engines": {
     "node": ">=8.5",
     "npm": ">=6.0",
