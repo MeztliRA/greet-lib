@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+## 0.2.0 (2021-04-28)
+
+* feat(global): add greets function ([3f7e906](https://github.com/MeztliRA/greet-lib/commit/3f7e906))
+* Merge branch 'main' of https://github.com/MeztliRA/greet-lib ([68e64a6](https://github.com/MeztliRA/greet-lib/commit/68e64a6))
+* Merge branch 'main' of https://github.com/MeztliRA/greet-lib ([29caa63](https://github.com/MeztliRA/greet-lib/commit/29caa63))
+* Rename LICENSE to LICENSE.md ([810c899](https://github.com/MeztliRA/greet-lib/commit/810c899))
+* Update package.json ([c20aa7f](https://github.com/MeztliRA/greet-lib/commit/c20aa7f))
+
+
+
 <a name="0.1.0"></a>
 ## 0.1.0 (2021-04-28)
 
