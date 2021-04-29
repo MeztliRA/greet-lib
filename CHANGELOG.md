@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.1"></a>
+## <small>0.3.1 (2021-04-29)</small>
+
+* build(global): fix build ([001e3cb](https://github.com/MeztliRA/greet-lib/commit/001e3cb))
+* fix(global): fix dependencies ([4646070](https://github.com/MeztliRA/greet-lib/commit/4646070))
+
+
+
 <a name="0.3.0"></a>
 ## 0.3.0 (2021-04-29)
 
