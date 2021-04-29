@@ -256,6 +256,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/resolve@npm:0.0.8":
+  version: 0.0.8
+  resolution: "@types/resolve@npm:0.0.8"
+  dependencies:
+    "@types/node": "*"
+  checksum: f54f13e4b6ac46a6c7bde9e609cd730f4369b434aa59c5230478b9262bb75e7349c3247fd2cdb917e98d053a57f5609dd552379c612a720b59a8714914d324ed
+  languageName: node
+  linkType: hard
+
 "@types/webpack-config-utils@npm:2.3.0":
   version: 2.3.0
   resolution: "@types/webpack-config-utils@npm:2.3.0"
@@ -1374,7 +1383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"builtin-modules@npm:^3.0.0":
+"builtin-modules@npm:^3.1.0":
   version: 3.2.0
   resolution: "builtin-modules@npm:3.2.0"
   checksum: f0e7240f70ae472a0a0167bf76d2e828c73028fe60be8cd229939c38a27527ea68c92f700553dac1316fa124af3037bc7a765ca0e029a03d2e9201dfb372ea24
@@ -2686,7 +2695,7 @@ __metadata:
     rollup: 0.68.2
     rollup-plugin-commonjs: 9.2.0
     rollup-plugin-json: 3.1.0
-    rollup-plugin-node-resolve: 4.0.0
+    rollup-plugin-node-resolve: ^5.2.0
     rollup-plugin-replace: 2.1.0
     rollup-plugin-sourcemaps: 0.4.2
     rollup-plugin-terser: 3.0.0
@@ -4740,7 +4749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-resolve@^1.8.1:
+"resolve@^1.11.1, resolve@^1.8.1":
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
   dependencies:
@@ -4759,7 +4768,7 @@ resolve@^1.8.1:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.8.1#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.11.1#builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#builtin<compat/resolve>":
   version: 1.20.0
   resolution: "resolve@patch:resolve@npm%3A1.20.0#builtin<compat/resolve>::version=1.20.0&hash=3388aa"
   dependencies:
@@ -4838,14 +4847,18 @@ resolve@^1.8.1:
   languageName: node
   linkType: hard
 
-"rollup-plugin-node-resolve@npm:4.0.0":
-  version: 4.0.0
-  resolution: "rollup-plugin-node-resolve@npm:4.0.0"
+"rollup-plugin-node-resolve@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "rollup-plugin-node-resolve@npm:5.2.0"
   dependencies:
-    builtin-modules: ^3.0.0
+    "@types/resolve": 0.0.8
+    builtin-modules: ^3.1.0
     is-module: ^1.0.0
-    resolve: ^1.8.1
-  checksum: de57589a922977d14d4ee4b981472880bb52d4f3459d9d7f12c8d68e474637a367c3dbcbae2ae770fee21b5ee922495aceaeb30dc8c3098be9983fd8ddaeb8cd
+    resolve: ^1.11.1
+    rollup-pluginutils: ^2.8.1
+  peerDependencies:
+    rollup: ">=1.11.0"
+  checksum: f20dd3e6669b2b888cd41c8e6072f09c95e14559fb7a4634b5756f7f99e0986e9dc36d3b3e651c0a38ca4c192b2b96c3898aec46a81842fd2f186f55701d9cf1
   languageName: node
   linkType: hard
 
@@ -4910,7 +4923,7 @@ resolve@^1.8.1:
   languageName: node
   linkType: hard
 
-"rollup-pluginutils@npm:^2.3.1, rollup-pluginutils@npm:^2.3.3":
+"rollup-pluginutils@npm:^2.3.1, rollup-pluginutils@npm:^2.3.3, rollup-pluginutils@npm:^2.8.1":
   version: 2.8.2
   resolution: "rollup-pluginutils@npm:2.8.2"
   dependencies:
