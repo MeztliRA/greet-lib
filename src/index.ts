@@ -1,1 +1,8 @@
-export { greet, greetOnce, greets, greetsPrefixed } from "./greeter";
+export {
+  greet,
+  greetOnce,
+  greets,
+  greetsPrefixed,
+  greetHello,
+  greetsHello,
+} from "./greeter";

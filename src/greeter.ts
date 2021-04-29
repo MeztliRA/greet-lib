@@ -1,3 +1,4 @@
+const hello = "Hello, ";
 export const greetOnce = (message: string) => {
   console.log(message);
 };
@@ -17,5 +18,15 @@ export const greets = (...messages: string[]) => {
 export const greetsPrefixed = (prefix: string, ...messages: string[]) => {
   messages.forEach((message) => {
     console.log(prefix + message);
+  });
+};
+
+export const greetHello = (message: string) => {
+  console.log(hello + message);
+};
+
+export const greetsHello = (...messages: string[]) => {
+  messages.forEach((message) => {
+    console.log(hello + message);
   });
 };
