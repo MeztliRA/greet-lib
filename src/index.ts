@@ -6,4 +6,4 @@ export {
   greetsPrefixed,
   greetHello,
   greetsHello,
-} from "./greeter";
+} from "./lib";
