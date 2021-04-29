@@ -15,6 +15,10 @@ export const greets = (...messages: string[]) => {
   });
 };
 
+export const greetPrefixed = (prefix: string, message: string) => {
+  console.log(prefix + message);
+};
+
 export const greetsPrefixed = (prefix: string, ...messages: string[]) => {
   messages.forEach((message) => {
     console.log(prefix + message);
