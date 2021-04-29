@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+## 0.3.0 (2021-04-29)
+
+* feat(global): add greetsPrefixed function ([c0dda51](https://github.com/MeztliRA/greet-lib/commit/c0dda51))
+* build(package.json): modified build script ([d6665f1](https://github.com/MeztliRA/greet-lib/commit/d6665f1))
+
+
+
 <a name="0.2.0"></a>
 ## 0.2.0 (2021-04-28)
 
