@@ -1,4 +1,5 @@
-const hello = "Hello, ";
+import { hello } from "./internals/constants";
+
 export const greetOnce = (message: string) => {
   console.log(message);
 };
