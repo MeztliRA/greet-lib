@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0"></a>
+## 0.4.0 (2021-04-29)
+
+* refactor(global): move constants to its own file ([c661e9b](https://github.com/MeztliRA/greet-lib/commit/c661e9b))
+* refactor(greeter): rename greeter.ts to lib.ts ([6c8dde4](https://github.com/MeztliRA/greet-lib/commit/6c8dde4))
+* feat(global): add greetHello and greetsHello functions ([140b4ce](https://github.com/MeztliRA/greet-lib/commit/140b4ce))
+* feat(global): add greetPrefixed function ([b962a1b](https://github.com/MeztliRA/greet-lib/commit/b962a1b))
+
+
+
 <a name="0.3.1"></a>
 ## <small>0.3.1 (2021-04-29)</small>
 
